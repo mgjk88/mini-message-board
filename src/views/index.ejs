@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <a href="/new">ADD A MESSAGE</a>
+    <% messages.map((message) => {%>
+    <p><%=message.text%></p>
+    <p><%=message.user%></p>
+    <p><%=message.added%></p>
+    <a href="message?text=<%=message.text%>&user=<%=message.user%>">VIEW</a>
+    <% })%>
+  </body>
+</html>
