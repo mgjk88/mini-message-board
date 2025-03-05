@@ -3,9 +3,9 @@
     <a href="/new">ADD A MESSAGE</a>
     <% messages.map((message) => {%>
     <p><%=message.text%></p>
-    <p><%=message.user%></p>
-    <p><%=message.added%></p>
-    <a href="message?text=<%=message.text%>&user=<%=message.user%>">VIEW</a>
+    <p><%=message.username%></p>
+    <p><%=message.date%></p>
+    <a href="message?text=<%=message.text%>&username=<%=message.username%>&date=<%=message.date%>">VIEW</a>
     <% })%>
   </body>
 </html>
